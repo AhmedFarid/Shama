@@ -12,9 +12,20 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+         self.addMiddleImage()
     }
 
+    func addMiddleImage(){
+        //Initialize your UIImage
+        let yourImage = UIImage(named: "Group 176")!.withRenderingMode(.alwaysOriginal)
+        
+        //Initialize a UIImageView
+        let imageView = UIImageView(image: yourImage)
+        
+        //Set your Navigation Bar to the inialized UIImageView
+        self.navigationItem.titleView = imageView
+        
+    }
 
 }
 
