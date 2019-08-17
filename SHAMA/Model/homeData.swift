@@ -63,8 +63,20 @@ class bestDimond: NSObject {
     
     
     init?(dict: [String: JSON]){
+        if let total_rate_av = dict["total_rate_av"]?.int {
+            self.total_rate_av = total_rate_av
+        }else {
+            self.total_rate_av = 0
+        }
         
-        guard let id = dict["id"]?.int,let name = dict["name"]?.string,let details = dict["details"]?.string,let photo = dict["photo"]?.string,let SalesPrice = dict["SalesPrice"]?.string,let OriginalPrice = dict["OriginalPrice"]?.string,let offer = dict["offer"]?.string,let caliber = dict["caliber"]?.string,let favorite = dict["favorite"]?.string,let Rate = dict["Rate"]?.int,let total_rate_av = dict["total_rate_av"]?.int else {return nil}
+        if let Rate = dict["Rate"]?.int {
+            self.Rate = Rate
+        }else {
+            self.Rate = 0
+        }
+        
+        
+        guard let id = dict["id"]?.int,let name = dict["name"]?.string,let details = dict["details"]?.string,let photo = dict["photo"]?.string,let SalesPrice = dict["SalesPrice"]?.string,let OriginalPrice = dict["OriginalPrice"]?.string,let offer = dict["offer"]?.string,let caliber = dict["caliber"]?.string,let favorite = dict["favorite"]?.string else {return nil}
         self.name = name
         self.photo = photo
         self.id = id
@@ -74,8 +86,6 @@ class bestDimond: NSObject {
         self.offer = offer
         self.caliber = caliber
         self.favorite = favorite
-        self.Rate = Rate
-        self.total_rate_av = total_rate_av
         
     }
 }

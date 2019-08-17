@@ -12,5 +12,6 @@ target 'SHAMA' do
   pod 'SwiftyJSON'
   pod 'Kingfisher'
   pod 'IQKeyboardManagerSwift'
-
+  pod 'Cosmos', '~> 19.0'
+  
 end

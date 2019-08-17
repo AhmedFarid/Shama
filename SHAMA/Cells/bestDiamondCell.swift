@@ -28,9 +28,9 @@ class bestDiamondCell: UICollectionViewCell {
     func configuerCell(prodect: bestDimond) {
         offores.text = "\(prodect.offer) % OFFER"
         if prodect.favorite == "0"{
-            fivart.image = UIImage(named: "favorite")
-        }else if prodect.favorite == "1"{
             fivart.image = UIImage(named: "favorite-heart-button")
+        }else if prodect.favorite == "1"{
+            fivart.image = UIImage(named: "favorite-heart-button-1")
         }
         name.text = prodect.name
         size.text = prodect.caliber

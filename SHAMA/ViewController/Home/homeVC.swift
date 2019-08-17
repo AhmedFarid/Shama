@@ -53,6 +53,12 @@ class homeVC: UIViewController {
         handleRefreshgetBestDimand()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        //handleRefreshgetBanner()
+        handleRefreshgetCat()
+        handleRefreshgetBestDimand()
+    }
+    
     
     @objc private func handleRefreshgetBanner() {
         API_Home.banner{(error: Error?, banner: [banners]?) in
@@ -110,6 +116,14 @@ class homeVC: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destaiantion = segue.destination as? pordectDitelsVC{
+            destaiantion.singleItem = sender as? bestDimond
+        }else if let destaiantion = segue.destination as? subCatVC{
+            destaiantion.singleItem = sender as? category
+        }
+    }
+    
 }
 
 
@@ -121,7 +135,7 @@ extension homeVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollec
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView.tag == 0 {
-        return banner.count
+            return banner.count
         }else if collectionView.tag == 1{
             return cat.count
         }else {
@@ -131,13 +145,13 @@ extension homeVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollec
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView.tag == 0 {
-        if let cell = bannerCollectionVIew.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? bannerCell {
-            let bannner = banner[indexPath.row]
-            cell.configuerCell(prodect: bannner)
-            return cell
-        }else {
-            return bannerCell()
-        }
+            if let cell = bannerCollectionVIew.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? bannerCell {
+                let bannner = banner[indexPath.row]
+                cell.configuerCell(prodect: bannner)
+                return cell
+            }else {
+                return bannerCell()
+            }
         }else if collectionView.tag == 1 {
             if let cell = categoriesCollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? catCell {
                 let bannner = cat[indexPath.row]
@@ -157,9 +171,19 @@ extension homeVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollec
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView.tag == 2{
+            performSegue(withIdentifier: "suge", sender: bestDimands[indexPath.row])
+        }else if collectionView.tag == 1{
+            performSegue(withIdentifier: "subCatSuge", sender: cat[indexPath.row])
+        }
+    }
+    
+    
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         if collectionView.tag == 0 {
-        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+            return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         }else if collectionView.tag == 1 {
             return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         }else {
@@ -169,11 +193,11 @@ extension homeVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollec
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView.tag == 0{
-        let size = bannerCollectionVIew.frame.size
-        return CGSize(width: size.width - 50, height: size.height)
+            let size = bannerCollectionVIew.frame.size
+            return CGSize(width: size.width - 50, height: size.height)
         }else if collectionView.tag == 1 {
             let size = categoriesCollectionView.frame.size
-            return CGSize(width: (size.width)/2, height: size.height)
+            return CGSize(width: (size.width)/2.3, height: size.height)
         }else{
             let size = bestDimandCollectionView.frame.size
             return CGSize(width: (size.width)/1.5, height: size.height)
@@ -182,7 +206,7 @@ extension homeVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollec
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         if collectionView.tag == 0 {
-        return 10.0
+            return 10.0
         }else if collectionView.tag == 1{
             return 10.0
         }else{

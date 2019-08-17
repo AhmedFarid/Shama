@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3F735F70BF4AB9AB8AF6E8596EE26B38"
+               BlueprintIdentifier = "953674A20F8615DCCD2FD53D0B673443"
                BlueprintName = "Pods-SHAMA"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "Pods-SHAMA.framework">
