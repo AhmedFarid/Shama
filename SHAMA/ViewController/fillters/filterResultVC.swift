@@ -1,15 +1,15 @@
 //
-//  allProductVC.swift
+//  filterResultVC.swift
 //  SHAMA
 //
-//  Created by Farido on 8/8/19.
+//  Created by Farido on 8/18/19.
 //  Copyright © 2019 Farido. All rights reserved.
 //
 
 import UIKit
 
-class allProductVC: UIViewController {
-    
+class filterResultVC: UIViewController {
+
     @IBOutlet weak var spiner: UIActivityIndicatorView!
     @IBOutlet weak var colloctionView: UICollectionView!
     @IBOutlet weak var titles: UILabel!
@@ -17,6 +17,11 @@ class allProductVC: UIViewController {
     var singleItme: category?
     var prodects = [bestDimond]()
     
+    var typeMen = ""
+    var styleId = ""
+    var typeCliber = ""
+    var maxPrice = ""
+    var minPrice = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +34,7 @@ class allProductVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        getSup()
+        //getSup()
         setUpPage()
     }
     
@@ -38,12 +43,14 @@ class allProductVC: UIViewController {
     }
     
     func getSup(){
+        
         self.spiner.isHidden = false
         self.spiner.startAnimating()
-        API_Home.allProdect(subcategory_id: singleItme?.id ?? 0) { (error, prodects: [bestDimond]?) in
+        
+        API_Favirot.filterProdect(min_price: minPrice, max_price: maxPrice, type_cliber: typeCliber, style_id: styleId, type_men: typeMen) { (error, prodects: [bestDimond]?) in
             if let prodects = prodects {
                 self.prodects = prodects
-                print("xxx\(self.prodects)")
+                print("llx\(self.prodects)")
                 self.colloctionView.reloadData()
             }
             
@@ -55,9 +62,6 @@ class allProductVC: UIViewController {
         }
     }
     
-    
-    
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destaiantion = segue.destination as? pordectDitelsVC{
             destaiantion.singleItem = sender as? bestDimond
@@ -67,7 +71,7 @@ class allProductVC: UIViewController {
     
 }
 
-extension allProductVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout  {
+extension filterResultVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout  {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1

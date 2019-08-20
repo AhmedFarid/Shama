@@ -27,6 +27,7 @@ class pordectDitelsVC: UIViewController {
     var counter = 0
     var sizess = 0
     var typess = 0
+    var cart = [cartData]()
     
     var prodectBanner = [prodectImages]()
     var sizes = [prodectSizes]()
@@ -193,6 +194,23 @@ class pordectDitelsVC: UIViewController {
         
     }
     
+    
+    func handleRefreshFavProdect() {
+        print("xxxxxxx")
+        API_Home.carts{(error: Error?, cart: [cartData]?,message) in
+            if let cart = cart {
+                self.cart = cart
+                print("sdsds\(self.cart)")
+                if let tabItems = self.tabBarController?.tabBar.items {
+                    let tabItem = tabItems[2]
+                    tabItem.badgeValue = "\(cart.count)"
+                }
+                
+            }
+        }
+        
+    }
+    
     @IBAction func addToCartBTN(_ sender: Any) {
 //        guard let type = TypeTF.text, !type.isEmpty else {
 //            let messages = NSLocalizedString("enter Product Type", comment: "hhhh")
@@ -209,6 +227,8 @@ class pordectDitelsVC: UIViewController {
 //        }
         API_Favirot.addCartProdect(prodectID: singleItem?.id ?? 0, qty: 1, standard_gold_id: typess, size_id: sizess) { (error, massage) in
             self.showAlert(title: "Add to cart", message: massage ?? "")
+            self.handleRefreshFavProdect()
+            
         }
     }
     

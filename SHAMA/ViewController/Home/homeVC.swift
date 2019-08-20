@@ -22,6 +22,7 @@ class homeVC: UIViewController {
     var banner = [banners]()
     var cat = [category]()
     var bestDimands = [bestDimond]()
+    var cart = [cartData]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,12 +52,31 @@ class homeVC: UIViewController {
         handleRefreshgetBanner()
         handleRefreshgetCat()
         handleRefreshgetBestDimand()
+        handleRefreshFavProdect()
+    }
+    
+    
+    func handleRefreshFavProdect() {
+        print("xxxxxxx")
+        API_Home.carts{(error: Error?, cart: [cartData]?,message) in
+            if let cart = cart {
+                self.cart = cart
+                print("sdsds\(self.cart)")
+                if let tabItems = self.tabBarController?.tabBar.items {
+                    let tabItem = tabItems[2]
+                    tabItem.badgeValue = "\(cart.count)"
+                }
+                
+            }
+        }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         //handleRefreshgetBanner()
         handleRefreshgetCat()
         handleRefreshgetBestDimand()
+        //handleRefreshFavProdect()
     }
     
     

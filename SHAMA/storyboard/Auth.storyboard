@@ -288,16 +288,63 @@
             </objects>
             <point key="canvasLocation" x="1671" y="108"/>
         </scene>
-        <!--View Controller-->
+        <!--Forget PasswordVC-->
         <scene sceneID="MV4-zK-cGc">
             <objects>
-                <viewController id="Cl4-gE-gL1" sceneMemberID="viewController">
+                <viewController id="Cl4-gE-gL1" customClass="forgetPasswordVC" customModule="SHAMA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2ot-K3-RtO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="hWt-Rb-2QD">
+                                <rect key="frame" x="16" y="261" width="288" height="46"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Emil Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="moE-8p-0Mj">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45.609999999999999" id="o3X-Zf-xFo"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKL-bd-H8f" customClass="UIButtonView" customModule="SHAMA" customModuleProvider="target">
+                                <rect key="frame" x="16" y="323" width="288" height="45.5"/>
+                                <color key="backgroundColor" red="1" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45.609999999999999" id="1hE-Ow-SAc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Forget Password"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginBTN:" destination="6mo-3Y-MOo" eventType="touchUpInside" id="1xh-DE-UcN"/>
+                                    <action selector="passwordBTN:" destination="Cl4-gE-gL1" eventType="touchUpInside" id="26A-WD-g5S"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hWt-Rb-2QD" firstAttribute="leading" secondItem="2ot-K3-RtO" secondAttribute="leading" constant="16" id="1Ws-8B-fYP"/>
+                            <constraint firstItem="gMi-Kg-VDe" firstAttribute="trailing" secondItem="hWt-Rb-2QD" secondAttribute="trailing" constant="16" id="5Ik-m9-HVi"/>
+                            <constraint firstItem="XKL-bd-H8f" firstAttribute="top" secondItem="hWt-Rb-2QD" secondAttribute="bottom" constant="16" id="7pn-Bd-AX6"/>
+                            <constraint firstItem="XKL-bd-H8f" firstAttribute="leading" secondItem="hWt-Rb-2QD" secondAttribute="leading" id="hpO-Xk-Cwa"/>
+                            <constraint firstItem="hWt-Rb-2QD" firstAttribute="centerY" secondItem="2ot-K3-RtO" secondAttribute="centerY" id="mIX-6e-vtO"/>
+                            <constraint firstItem="XKL-bd-H8f" firstAttribute="trailing" secondItem="hWt-Rb-2QD" secondAttribute="trailing" id="zVS-Dw-J9n"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gMi-Kg-VDe"/>
                     </view>
+                    <connections>
+                        <outlet property="emaiTF" destination="moE-8p-0Mj" id="UC9-yd-dIF"/>
+                        <outlet property="passwrodTF" destination="XKL-bd-H8f" id="XEK-G7-VgT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Gh-lF-IhK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

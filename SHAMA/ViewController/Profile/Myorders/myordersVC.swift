@@ -1,57 +1,53 @@
 //
-//  favoriteVC.swift
+//  myordersVC.swift
 //  SHAMA
 //
-//  Created by Farido on 8/6/19.
+//  Created by Farido on 8/20/19.
 //  Copyright © 2019 Farido. All rights reserved.
 //
 
 import UIKit
 
-class favoriteVC: UIViewController {
+class myordersVC: UIViewController {
 
-    @IBOutlet weak var favoriteLableOut: UILabel!
-    @IBOutlet weak var noFavorImageOut: UIImageView!
-    @IBOutlet weak var noFavoirtLableOUt: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var spiner: UIActivityIndicatorView!
     
-    var favProdect = [bestDimond]()
+    var myOrder = [myorders]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         //spiner.isHidden = true
         tableView.delegate = self
         tableView.dataSource = self
-       // handleRefreshFavProdect()
+        // handleRefreshFavProdect()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.tableView.isHidden = false
-        self.favoriteLableOut.isHidden = false
-        handleRefreshFavProdect() 
+        handleRefreshFavProdect()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destaiantion = segue.destination as? pordectDitelsVC{
-            destaiantion.singleItem = sender as? bestDimond
+        if let destaiantion = segue.destination as? myordersDetialsVC{
+            destaiantion.singleItem = sender as? myorders
         }
     }
     
     @objc private func handleRefreshFavProdect() {
         self.spiner.isHidden = false
         self.spiner.startAnimating()
-        API_Favirot.categoriesFaveProduct{(error: Error?, favProdect: [bestDimond]?,message) in
-            if message == "All products"{
-                if let favProdect = favProdect {
-                    self.favProdect = favProdect
-                    print("sdsds\(self.favProdect)")
+        API_Profile.myorder{(error: Error?, myOrder: [myorders]?,message) in
+            if message == "User orders."{
+                if let myOrder = myOrder {
+                    self.myOrder = myOrder
+                    print("sdsds\(self.myOrder)")
                     self.tableView.reloadData()
                 }
             }else {
                 self.tableView.isHidden = true
-                self.favoriteLableOut.isHidden = true
+                //self.favoriteLableOut.isHidden = true
             }
             self.spiner.isHidden = true
             self.spiner.stopAnimating()
@@ -61,30 +57,30 @@ class favoriteVC: UIViewController {
     
 }
 
-extension favoriteVC: UITableViewDelegate,UITableViewDataSource {
+extension myordersVC: UITableViewDelegate,UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return favProdect.count
+        return myOrder.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? favirotCell{
-            let fav = favProdect[indexPath.row]
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? myorderCell{
+            let fav = myOrder[indexPath.row]
             cell.configuerCell(prodect: fav)
             cell.selectionStyle = UITableViewCell.SelectionStyle.none
             return cell
         }else {
-        return favirotCell()
+            return myorderCell()
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "suge", sender: favProdect[indexPath.row])
+        performSegue(withIdentifier: "suge", sender: myOrder[indexPath.row])
     }
-
+    
 }
 
 

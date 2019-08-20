@@ -93,4 +93,49 @@ class API_Auth: NSObject {
         }
         
     }
+    
+    class func forgetPassword (email: String, completion: @escaping (_ error: Error?,_ messsage: String?,_ message: String?)-> Void) {
+        
+        let url = URLs.forgetPass
+        print(url)
+        let lang = NSLocalizedString("en", comment: "profuct list lang")
+        let parameters = [
+            "lang": lang,
+            "email": email
+        ]
+        print(parameters)
+        
+//        guard let userToken = helper.getAPIToken().token else {
+//            completion(nil,nil,nil)
+//            return
+//        }
+        
+//        let headers = [
+//            "Accept": "application/json",
+//            "Authorization": "Bearer \(userToken)"
+//        ]
+        
+        Alamofire.request(url, method: .post, parameters: parameters, encoding: URLEncoding.default, headers: nil) .responseJSON  { response in
+            switch response.result
+            {
+            case .failure(let error):
+                completion(error,nil,nil)
+                print(error)
+                
+            case .success(let value):
+                print(value)
+                let json = JSON(value)
+                print(json)
+                guard let messsagez = json["message"].string else{
+                    completion(nil,nil,nil)
+                    return
+                }
+                
+                if let messsage = json["message"].string{
+                    completion(nil, messsagez,messsage)
+                }
+                
+            }
+        }
+    }
 }
