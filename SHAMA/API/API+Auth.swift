@@ -84,7 +84,7 @@ class API_Auth: NSObject {
                             completion(nil, true , nil,status,message)
                         }
                     }else {
-                        let message = json["message"].string
+                        let message = json["data"].string
                         print(message ?? "no")
                         completion(nil,false,nil,status,message)
                     }
@@ -126,12 +126,12 @@ class API_Auth: NSObject {
                 print(value)
                 let json = JSON(value)
                 print(json)
-                guard let messsagez = json["message"].string else{
+                guard let messsagez = json["data"].string else{
                     completion(nil,nil,nil)
                     return
                 }
                 
-                if let messsage = json["message"].string{
+                if let messsage = json["data"].string{
                     completion(nil, messsagez,messsage)
                 }
                 

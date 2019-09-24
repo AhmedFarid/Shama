@@ -75,6 +75,9 @@ extension favoriteVC: UITableViewDelegate,UITableViewDataSource {
             let fav = favProdect[indexPath.row]
             cell.configuerCell(prodect: fav)
             cell.selectionStyle = UITableViewCell.SelectionStyle.none
+//            cell.layoutSubviews()
+//            let padding = UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0)
+//            cell.inset(by: padding)
             return cell
         }else {
         return favirotCell()

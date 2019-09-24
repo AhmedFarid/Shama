@@ -36,7 +36,9 @@ class signUpVC: UIViewController {
     @IBAction func loginBackBTN(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "login") as! loginVC
         let navigationController = UINavigationController(rootViewController: vc)
+        navigationController.modalPresentationStyle = .fullScreen
         self.present(navigationController, animated: false, completion: nil)
+        
         
     }
     
@@ -151,7 +153,7 @@ class signUpVC: UIViewController {
     }
     
     func isValidInput(Input:String) -> Bool {
-        let myCharSet=CharacterSet(charactersIn:"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
+        let myCharSet=CharacterSet(charactersIn:"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ أ إ  ض ص ث ق ف غ ع ه خ ح  ج د ش ي ب ل ا ت ن م ك  ط ئ ء ؤ ر لا ى ة و ز ظ")
         let output: String = Input.trimmingCharacters(in: myCharSet.inverted)
         let isValid: Bool = (Input == output)
         print("\(isValid)")

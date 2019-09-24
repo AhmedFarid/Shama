@@ -92,6 +92,18 @@ class prodectTypeGold: NSObject {
     }
 }
 
+//"" : 100,
+//"" : "Sven Eriksson",
+//"" : 213,
+//"caliber" : null,
+//"photo" : "15679268375597.png",
+//"size" : 0,
+//"details" : "Traditional jewelry designs: They are not designs for gold or diamond jewelry or precious stones and are made of minerals and traditional stones and sometimes imitate the jewelry of fact with the aim of selling at cheap prices د",
+//"delivery_fees" : "0.00",
+//"qty" : "1",
+//"taxes" : "0.00",
+//"price" : "100.00"
+
 class cartData: NSObject {
     var id: Int
     var name: String
@@ -100,9 +112,9 @@ class cartData: NSObject {
     var price: String
     var qty: String
     var taxes: String
-    var caliber: String
     var delivery_fees: String
     var size: String
+    var caliber: String
     
     init?(dict: [String: JSON]){
         
@@ -112,7 +124,13 @@ class cartData: NSObject {
             self.size = "0"
         }
         
-        guard let id = dict["id"]?.int,let name = dict["name"]?.string,let photo = dict["photo"]?.string,let totalprice = dict["totalprice"]?.int,let price = dict["price"]?.string,let qty = dict["qty"]?.string,let taxes = dict["taxes"]?.string,let caliber = dict["caliber"]?.string,let delivery_fees = dict["delivery_fees"]?.string else {return nil}
+        if let caliber = dict["caliber"]?.string {
+            self.caliber = caliber
+        }else {
+            self.caliber = "0"
+        }
+        
+        guard let id = dict["id"]?.int,let name = dict["name"]?.string,let photo = dict["photo"]?.string,let totalprice = dict["totalprice"]?.int,let price = dict["price"]?.string,let qty = dict["qty"]?.string,let taxes = dict["taxes"]?.string,let delivery_fees = dict["delivery_fees"]?.string else {return nil}
         self.id = id
         self.name = name
         self.photo = photo
@@ -120,7 +138,6 @@ class cartData: NSObject {
         self.price = price
         self.qty = qty
         self.taxes = taxes
-        self.caliber = caliber
         self.delivery_fees = delivery_fees
         
     }

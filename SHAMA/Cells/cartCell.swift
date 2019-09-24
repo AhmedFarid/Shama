@@ -35,12 +35,23 @@ class cartCell: UITableViewCell {
         
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        let padding = UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0)
-        bounds = bounds.inset(by: padding)
-        
+    override var frame: CGRect {
+      get {
+          return super.frame
+      }
+      set (newFrame) {
+          var frame =  newFrame
+          frame.origin.y += 4
+          frame.size.height -= 2 * 5
+          super.frame = frame
+      }
     }
+//    override func layoutSubviews() {
+//        super.layoutSubviews()
+//        let padding = UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0)
+//        bounds = bounds.inset(by: padding)
+//
+//    }
     
     
     func configuerCell(prodect: cartData) {

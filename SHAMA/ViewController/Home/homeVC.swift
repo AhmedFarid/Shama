@@ -88,8 +88,11 @@ class homeVC: UIViewController {
                 self.bannerCollectionVIew.reloadData()
                 self.pageView.numberOfPages =  banner.count
                 self.pageView.currentPage = 0
+                if banner.count != 0{
                 DispatchQueue.main.async {
                     self.timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(self.changeImage), userInfo: nil, repeats: true)
+                    }
+                    
                 }
             }
         }
@@ -120,7 +123,6 @@ class homeVC: UIViewController {
     
     
     @objc func changeImage() {
-        
         if counter < banner.count {
             let index = IndexPath.init(item: counter, section: 0)
             self.bannerCollectionVIew.scrollToItem(at: index, at: .centeredHorizontally, animated: true)

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AEL-PG-Wna">
-    <device id="retina5_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AEL-PG-Wna">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -168,12 +166,12 @@
                                                                         <constraint firstAttribute="width" constant="25" id="pmF-Vl-I3l"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cd3-3R-fTA">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cd3-3R-fTA">
                                                                     <rect key="frame" x="74" y="160.33333333333334" width="38.333333333333343" height="19.333333333333343"/>
                                                                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="size" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubr-Te-FjL">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="size" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubr-Te-FjL">
                                                                     <rect key="frame" x="83" y="187.66666666666666" width="20" height="16.666666666666657"/>
                                                                     <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="12"/>
                                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -294,7 +292,7 @@
                     <navigationItem key="navigationItem" id="rU1-RP-ySe">
                         <nil key="title"/>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qoe-dv-x9g">
-                            <rect key="frame" x="148" y="9.6666666666666643" width="118" height="25"/>
+                            <rect key="frame" x="144" y="0.0" width="126" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" image="Group 176"/>
                         </button>
@@ -322,7 +320,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dk-bO-Y7k">
-                                <rect key="frame" x="8" y="68" width="398" height="31"/>
+                                <rect key="frame" x="8" y="48" width="398" height="31"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="22"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -338,9 +336,9 @@ added to this category</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="oV9-EF-Cj0">
-                                <rect key="frame" x="8" y="107" width="398" height="572"/>
+                                <rect key="frame" x="8" y="87" width="398" height="592"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lSK-zf-SW9">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lSK-zf-SW9">
                                     <size key="itemSize" width="103" height="141"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -409,7 +407,7 @@ added to this category</string>
                     <navigationItem key="navigationItem" id="9H4-FM-zdw">
                         <nil key="title"/>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rqQ-C1-vys">
-                            <rect key="frame" x="175.33333333333334" y="9.6666666666666661" width="63.333333333333343" height="24.666666666666671"/>
+                            <rect key="frame" x="144" y="0.0" width="126" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" image="Group 176"/>
                         </button>
@@ -434,7 +432,7 @@ added to this category</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJY-0l-K8q">
-                                <rect key="frame" x="8" y="72" width="134" height="33"/>
+                                <rect key="frame" x="8" y="52" width="134" height="33"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -450,7 +448,7 @@ added to favorit</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="133" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gbv-OA-PDa">
-                                <rect key="frame" x="8" y="113" width="398" height="574"/>
+                                <rect key="frame" x="8" y="93" width="398" height="594"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="scrollIndicatorInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
                                 <prototypes>
@@ -482,12 +480,12 @@ added to favorit</string>
                                                             <rect key="frame" x="0.0" y="63.333333333333321" width="174.66666666666666" height="31.666666666666664"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WjK-T3-UIz">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="166.66666666666666" height="31.666666666666668"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="85.333333333333329" height="31.666666666666668"/>
                                                                     <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="orginalPrice" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lI-c2-U7n">
-                                                                    <rect key="frame" x="174.66666666666666" y="0.0" width="0.0" height="31.666666666666668"/>
+                                                                    <rect key="frame" x="93.333333333333343" y="0.0" width="81.333333333333343" height="31.666666666666668"/>
                                                                     <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="12"/>
                                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -501,7 +499,7 @@ added to favorit</string>
                                                     </constraints>
                                                 </stackView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q1p-PM-SxP">
-                                                    <rect key="frame" x="342" y="97.666666666666671" width="0.0" height="1"/>
+                                                    <rect key="frame" x="260.66666666666669" y="97.666666666666671" width="81.333333333333314" height="1"/>
                                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="TSZ-Oa-Vc9"/>
@@ -584,7 +582,7 @@ added to favorit</string>
                     <navigationItem key="navigationItem" id="HLd-YN-Fj8">
                         <nil key="title"/>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1TD-sD-XDx">
-                            <rect key="frame" x="175.33333333333334" y="9.6666666666666643" width="63.333333333333343" height="25"/>
+                            <rect key="frame" x="144" y="0.0" width="126" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" image="Group 176"/>
                         </button>
@@ -611,21 +609,21 @@ added to favorit</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cart List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FA0-LT-eRr">
-                                <rect key="frame" x="8" y="72" width="91.666666666666671" height="33"/>
+                                <rect key="frame" x="8" y="52" width="91.666666666666671" height="33"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Items" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkb-1u-w7m">
-                                <rect key="frame" x="346" y="72" width="60" height="33"/>
+                                <rect key="frame" x="346" y="52" width="60" height="33"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
                                 <color key="textColor" red="1" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_cart_empty" translatesAutoresizingMaskIntoConstraints="NO" id="IWH-TR-eYc">
-                                <rect key="frame" x="172.33333333333334" y="330.66666666666669" width="69.666666666666657" height="74.666666666666686"/>
+                                <rect key="frame" x="137.66666666666666" y="293.66666666666669" width="138.99999999999997" height="149"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGx-fD-ILt">
-                                <rect key="frame" x="145.33333333333334" y="405.33333333333331" width="123.66666666666666" height="54.666666666666686"/>
+                                <rect key="frame" x="145.33333333333334" y="442.66666666666669" width="123.66666666666666" height="54.666666666666686"/>
                                 <string key="text">No Items 
 added to cart</string>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
@@ -725,7 +723,7 @@ added to cart</string>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="162" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HV5-VC-btu">
-                                <rect key="frame" x="8" y="113.00000000000003" width="398" height="441.66666666666674"/>
+                                <rect key="frame" x="8" y="93.000000000000028" width="398" height="461.66666666666674"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="scrollIndicatorInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
                                 <prototypes>
@@ -740,7 +738,7 @@ added to cart</string>
                                                     <rect key="frame" x="0.0" y="0.0" width="159.33333333333334" height="147"/>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Oh6-gb-srC">
-                                                    <rect key="frame" x="163.33333333333337" y="0.0" width="149.66666666666663" height="139"/>
+                                                    <rect key="frame" x="163.33333333333334" y="0.0" width="110.66666666666666" height="139"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsC-Yz-HqS">
                                                             <rect key="frame" x="0.0" y="0.0" width="43.666666666666664" height="38.333333333333336"/>
@@ -768,29 +766,29 @@ added to cart</string>
                                                     </subviews>
                                                 </stackView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MvR-kf-9KO">
-                                                    <rect key="frame" x="374" y="8" width="16" height="22"/>
+                                                    <rect key="frame" x="362" y="8" width="28" height="28"/>
                                                     <state key="normal" image="Path 232"/>
                                                     <connections>
                                                         <action selector="deleteBtn:" destination="6Ec-yC-BxH" eventType="touchUpInside" id="kEy-VU-IZU"/>
                                                     </connections>
                                                 </button>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mG0-U8-Q3f">
-                                                    <rect key="frame" x="315" y="106" width="75" height="22"/>
+                                                    <rect key="frame" x="276" y="91" width="114" height="37"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXE-EC-1v1">
-                                                            <rect key="frame" x="0.0" y="0.0" width="25" height="22"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="38" height="37"/>
                                                             <state key="normal" image="Group 180"/>
                                                             <connections>
                                                                 <action selector="min:" destination="6Ec-yC-BxH" eventType="touchUpInside" id="8Rq-A3-YP8"/>
                                                             </connections>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="111" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7U-oD-0Qm">
-                                                            <rect key="frame" x="25" y="0.0" width="25" height="22"/>
+                                                            <rect key="frame" x="38" y="0.0" width="38" height="37"/>
                                                             <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6H-OE-crI">
-                                                            <rect key="frame" x="50" y="0.0" width="25" height="22"/>
+                                                            <rect key="frame" x="76" y="0.0" width="38" height="37"/>
                                                             <state key="normal" image="Group 178"/>
                                                             <connections>
                                                                 <action selector="add:" destination="6Ec-yC-BxH" eventType="touchUpInside" id="8Ia-AQ-owX"/>
@@ -828,7 +826,7 @@ added to cart</string>
                                 </prototypes>
                             </tableView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="pPQ-Zk-RSk">
-                                <rect key="frame" x="0.0" y="7.6666666666666856" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="-2.6666666666666856" width="414" height="736.33333333333348"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.81648877639999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="color" red="1" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
@@ -861,7 +859,7 @@ added to cart</string>
                     <navigationItem key="navigationItem" id="sjb-Fe-I96">
                         <nil key="title"/>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ANf-mu-2dh">
-                            <rect key="frame" x="175.33333333333334" y="9.6666666666666643" width="63.333333333333343" height="25"/>
+                            <rect key="frame" x="144" y="0.0" width="126" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" image="Group 176"/>
                         </button>
@@ -896,12 +894,12 @@ added to cart</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAp-CR-py8">
-                                <rect key="frame" x="8" y="72" width="70" height="33"/>
+                                <rect key="frame" x="8" y="52" width="70" height="33"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPN-EJ-aL2">
-                                <rect key="frame" x="374" y="70.666666666666671" width="32" height="36"/>
+                                <rect key="frame" x="374" y="50.666666666666657" width="32" height="36"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="Edit">
                                     <color key="titleColor" red="1" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -911,7 +909,7 @@ added to cart</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tm6-Fl-G4c" customClass="roundedView" customModule="SHAMA" customModuleProvider="target">
-                                <rect key="frame" x="8" y="113" width="398" height="110.33333333333331"/>
+                                <rect key="frame" x="8" y="93" width="398" height="110.33333333333331"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cyd-Ny-Gnb">
                                         <rect key="frame" x="16.000000000000007" y="8" width="99.666666666666686" height="94.333333333333329"/>
@@ -964,7 +962,7 @@ added to cart</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZf-dP-oIf" customClass="roundedView" customModule="SHAMA" customModuleProvider="target">
-                                <rect key="frame" x="8" y="231.33333333333334" width="398" height="43.333333333333343"/>
+                                <rect key="frame" x="8" y="211.33333333333334" width="398" height="43.333333333333343"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Q3l-FK-cVL">
                                         <rect key="frame" x="2" y="7.9999999999999982" width="394" height="27.333333333333329"/>
@@ -1018,7 +1016,7 @@ added to cart</string>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGn-aU-1Wp" customClass="UIButtonView" customModule="SHAMA" customModuleProvider="target">
-                                <rect key="frame" x="8" y="282.66666666666669" width="398" height="45.666666666666686"/>
+                                <rect key="frame" x="8" y="262.66666666666669" width="398" height="45.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45.670000000000002" id="oPL-P4-XYR"/>
                                 </constraints>
@@ -1043,14 +1041,14 @@ added to cart</string>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_menu_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="0eh-9e-YA3">
-                                <rect key="frame" x="383" y="299.66666666666669" width="7" height="12"/>
+                                <rect key="frame" x="383" y="279.66666666666669" width="7" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="12.07" id="Kxo-TA-1KC"/>
                                     <constraint firstAttribute="width" constant="6.8799999999999999" id="Zpr-rm-eji"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrS-4V-h56" customClass="UIButtonView" customModule="SHAMA" customModuleProvider="target">
-                                <rect key="frame" x="8" y="336.33333333333331" width="398" height="45.666666666666686"/>
+                                <rect key="frame" x="8" y="316.33333333333331" width="398" height="45.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45.670000000000002" id="iVj-e8-85h"/>
                                 </constraints>
@@ -1074,14 +1072,14 @@ added to cart</string>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_menu_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Pmu-QP-Rf8">
-                                <rect key="frame" x="383" y="353.33333333333331" width="7" height="12"/>
+                                <rect key="frame" x="383" y="333.33333333333331" width="7" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="12.07" id="Ihg-IN-H1D"/>
                                     <constraint firstAttribute="width" constant="6.8799999999999999" id="VeT-n6-wsv"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebm-jr-SFo" customClass="UIButtonView" customModule="SHAMA" customModuleProvider="target">
-                                <rect key="frame" x="8" y="390" width="398" height="45.666666666666686"/>
+                                <rect key="frame" x="8" y="370" width="398" height="45.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45.670000000000002" id="ABw-0z-keU"/>
                                 </constraints>
@@ -1106,14 +1104,14 @@ added to cart</string>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_menu_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="UiE-lf-s4t">
-                                <rect key="frame" x="383" y="407" width="7" height="12"/>
+                                <rect key="frame" x="383" y="387" width="7" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="12.07" id="j6a-km-t71"/>
                                     <constraint firstAttribute="width" constant="6.8799999999999999" id="v8x-Yx-5QQ"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGs-mt-4K8" customClass="UIButtonView" customModule="SHAMA" customModuleProvider="target">
-                                <rect key="frame" x="8" y="443.66666666666669" width="398" height="45.666666666666686"/>
+                                <rect key="frame" x="8" y="423.66666666666669" width="398" height="45.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45.670000000000002" id="XpK-LL-ZPd"/>
                                 </constraints>
@@ -1137,14 +1135,14 @@ added to cart</string>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_menu_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="ete-KT-7c9">
-                                <rect key="frame" x="383" y="460.66666666666669" width="7" height="12"/>
+                                <rect key="frame" x="383" y="440.66666666666669" width="7" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="12.07" id="MbZ-c9-9PF"/>
                                     <constraint firstAttribute="width" constant="6.8799999999999999" id="Yuy-vZ-trj"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxH-iU-6mf" customClass="UIButtonView" customModule="SHAMA" customModuleProvider="target">
-                                <rect key="frame" x="8" y="497.33333333333331" width="398" height="45.666666666666686"/>
+                                <rect key="frame" x="8" y="477.33333333333331" width="398" height="45.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45.670000000000002" id="O40-cM-Rw4"/>
                                 </constraints>
@@ -1169,7 +1167,7 @@ added to cart</string>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_menu_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="9s1-YR-9gT">
-                                <rect key="frame" x="383" y="514.33333333333337" width="7" height="12"/>
+                                <rect key="frame" x="383" y="494.33333333333331" width="7" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="12.07" id="5fU-9L-9cD"/>
                                     <constraint firstAttribute="width" constant="6.8799999999999999" id="6t0-lF-DXt"/>
@@ -1221,7 +1219,7 @@ added to cart</string>
                     <navigationItem key="navigationItem" id="C9w-uy-DVV">
                         <nil key="title"/>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3nd-0D-xCV">
-                            <rect key="frame" x="175.33333333333334" y="9.6666666666666643" width="63.333333333333343" height="25"/>
+                            <rect key="frame" x="144" y="0.0" width="126" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" image="Group 176"/>
                         </button>
@@ -1269,7 +1267,7 @@ added to cart</string>
                     <tabBarItem key="tabBarItem" title="" image="ic_home" selectedImage="Group 218" id="S6S-Vr-juf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="stA-K8-t05">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
@@ -1289,7 +1287,7 @@ added to cart</string>
                     <tabBarItem key="tabBarItem" title="" image="ic_favourit" selectedImage="Group 290-1" id="Ifv-A3-Kqk"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vpx-sC-TiB">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
@@ -1309,7 +1307,7 @@ added to cart</string>
                     <tabBarItem key="tabBarItem" title="" image="ic_cart" selectedImage="Group 292" id="haQ-0B-H0S"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N2U-Xh-8ej">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
@@ -1329,7 +1327,7 @@ added to cart</string>
                     <tabBarItem key="tabBarItem" title="" image="ic_profile" selectedImage="Group 291" id="Oy4-YN-N3A"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xpF-s3-OYb">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
@@ -1461,7 +1459,6 @@ added to cart</string>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="ABa-dV-iyX"/>
                                                 </constraints>
-                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -1470,7 +1467,6 @@ added to cart</string>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="Wio-q2-9Dl"/>
                                                 </constraints>
-                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -1572,7 +1568,7 @@ added to cart</string>
                     <navigationItem key="navigationItem" id="VKm-Ne-0I0">
                         <nil key="title"/>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="j3b-xF-2J5">
-                            <rect key="frame" x="148" y="9.6666666666666643" width="118" height="25"/>
+                            <rect key="frame" x="144" y="0.0" width="126" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" image="Group 176"/>
                         </button>
@@ -1605,12 +1601,12 @@ added to cart</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORW-qs-9YP">
-                                <rect key="frame" x="8" y="68" width="398" height="31"/>
+                                <rect key="frame" x="8" y="48" width="398" height="31"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="22"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rl-ro-dKU">
-                                <rect key="frame" x="340" y="72.666666666666671" width="66" height="22"/>
+                                <rect key="frame" x="317" y="44.666666666666664" width="89" height="37.999999999999993"/>
                                 <state key="normal" title="  Filter" image="ic_filter">
                                     <color key="titleColor" red="1" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -1619,10 +1615,10 @@ added to cart</string>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_no_result" translatesAutoresizingMaskIntoConstraints="NO" id="YiH-ue-pJm">
-                                <rect key="frame" x="199" y="360" width="16" height="16"/>
+                                <rect key="frame" x="123" y="270.66666666666669" width="168" height="195"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LA-qA-9Mb">
-                                <rect key="frame" x="103.66666666666667" y="376" width="206.66666666666663" height="54.666666666666686"/>
+                                <rect key="frame" x="103.66666666666667" y="465.66666666666669" width="206.66666666666663" height="54.666666666666686"/>
                                 <string key="text">No Items 
 added to this category</string>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
@@ -1630,7 +1626,7 @@ added to this category</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="18q-WK-aVP">
-                                <rect key="frame" x="0.0" y="107" width="414" height="572"/>
+                                <rect key="frame" x="0.0" y="87" width="414" height="592"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3Rz-qy-1XK">
                                     <size key="itemSize" width="186" height="254"/>
@@ -1681,12 +1677,12 @@ added to this category</string>
                                                         <constraint firstAttribute="height" constant="25" id="erN-eH-g66"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRW-l2-4T4">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRW-l2-4T4">
                                                     <rect key="frame" x="74" y="160.33333333333334" width="38.333333333333343" height="19.333333333333343"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="size" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyF-3D-tvE">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="size" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyF-3D-tvE">
                                                     <rect key="frame" x="83" y="187.66666666666666" width="20" height="16.666666666666657"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1791,7 +1787,7 @@ added to this category</string>
                     <navigationItem key="navigationItem" id="DGG-9g-CGz">
                         <nil key="title"/>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wFe-H4-pPC">
-                            <rect key="frame" x="175.33333333333334" y="9.6666666666666661" width="63.333333333333343" height="24.666666666666671"/>
+                            <rect key="frame" x="144" y="0.0" width="126" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" image="Group 176"/>
                         </button>
@@ -1827,7 +1823,7 @@ added to this category</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCy-1h-3MQ">
-                                                <rect key="frame" x="340" y="12.333333333333336" width="66" height="22"/>
+                                                <rect key="frame" x="317" y="4.3333333333333321" width="89" height="38"/>
                                                 <state key="normal" title="  Filter" image="ic_filter">
                                                     <color key="titleColor" red="1" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1890,7 +1886,6 @@ added to this category</string>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="nCc-Nd-pb4"/>
                                                 </constraints>
-                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -1928,7 +1923,6 @@ added to this category</string>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="943-s9-gez"/>
                                                                 </constraints>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                             </textField>
@@ -1937,7 +1931,6 @@ added to this category</string>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="Ax2-7W-Dvn"/>
                                                                 </constraints>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                             </textField>
@@ -1960,14 +1953,14 @@ added to this category</string>
                                                         <rect key="frame" x="8" y="8" width="358" height="146"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0l-46-10G">
-                                                                <rect key="frame" x="0.0" y="62" width="173" height="22"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="173" height="146"/>
                                                                 <state key="normal" image="Group 125"/>
                                                                 <connections>
                                                                     <action selector="forwomenAction:" destination="qJE-ur-SgQ" eventType="touchUpInside" id="KOk-ed-GGf"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7YS-Yx-cPF">
-                                                                <rect key="frame" x="185" y="62" width="173" height="22"/>
+                                                                <rect key="frame" x="185" y="0.0" width="173" height="146"/>
                                                                 <state key="normal" image="Group 232"/>
                                                                 <connections>
                                                                     <action selector="formanActionBTN:" destination="qJE-ur-SgQ" eventType="touchUpInside" id="F8z-fr-9qE"/>
@@ -2040,7 +2033,7 @@ added to this category</string>
                     <navigationItem key="navigationItem" id="mD5-4B-TIB">
                         <nil key="title"/>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="b0U-XC-YHN">
-                            <rect key="frame" x="148" y="9.6666666666666643" width="118" height="25"/>
+                            <rect key="frame" x="144" y="0.0" width="126" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" image="Group 176"/>
                         </button>
@@ -2069,15 +2062,15 @@ added to this category</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwk-Sn-OAH">
-                                <rect key="frame" x="8" y="68" width="398" height="31"/>
+                                <rect key="frame" x="8" y="48" width="398" height="31"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="22"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_no_result" translatesAutoresizingMaskIntoConstraints="NO" id="uzz-Fs-cGn">
-                                <rect key="frame" x="165" y="319.33333333333331" width="84.333333333333314" height="97.666666666666686"/>
+                                <rect key="frame" x="123" y="270.66666666666669" width="168" height="195"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tI7-SG-E9a">
-                                <rect key="frame" x="103.66666666666667" y="417" width="206.66666666666663" height="54.666666666666686"/>
+                                <rect key="frame" x="103.66666666666667" y="465.66666666666669" width="206.66666666666663" height="54.666666666666686"/>
                                 <string key="text">No Items 
 added to this category</string>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
@@ -2085,7 +2078,7 @@ added to this category</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vMI-Ms-xL6">
-                                <rect key="frame" x="0.0" y="107" width="414" height="572"/>
+                                <rect key="frame" x="0.0" y="87" width="414" height="592"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RTb-II-QVW">
                                     <size key="itemSize" width="186" height="254"/>
@@ -2136,12 +2129,12 @@ added to this category</string>
                                                         <constraint firstAttribute="width" constant="25" id="K3p-q6-ULV"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKT-Nj-8KX">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKT-Nj-8KX">
                                                     <rect key="frame" x="74" y="160.33333333333334" width="38.333333333333343" height="19.333333333333343"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="size" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUP-J8-SKv">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="size" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUP-J8-SKv">
                                                     <rect key="frame" x="83" y="187.66666666666666" width="20" height="16.666666666666657"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2243,7 +2236,7 @@ added to this category</string>
                     <navigationItem key="navigationItem" id="N3k-PZ-K8Y">
                         <nil key="title"/>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4xu-7v-LmR">
-                            <rect key="frame" x="175.33333333333334" y="9.6666666666666661" width="63.333333333333343" height="24.666666666666671"/>
+                            <rect key="frame" x="144" y="0.0" width="126" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" image="Group 176"/>
                         </button>
@@ -2268,12 +2261,12 @@ added to this category</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checkout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vop-4A-wWD">
-                                <rect key="frame" x="8" y="96" width="104.33333333333333" height="33"/>
+                                <rect key="frame" x="8" y="76" width="104.33333333333333" height="33"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsu-Bo-cKE" customClass="UIButtonView" customModule="SHAMA" customModuleProvider="target">
-                                <rect key="frame" x="8" y="481.66666666666669" width="398" height="45.666666666666686"/>
+                                <rect key="frame" x="8" y="461.66666666666669" width="398" height="45.666666666666686"/>
                                 <color key="backgroundColor" red="1" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45.609999999999999" id="Cye-FW-Sqn"/>
@@ -2292,26 +2285,23 @@ added to this category</string>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="cg5-wD-AsR">
-                                <rect key="frame" x="8" y="249" width="398" height="168.66666666666663"/>
+                                <rect key="frame" x="8" y="229" width="398" height="168.66666666666663"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JEH-AL-xvb">
                                         <rect key="frame" x="0.0" y="0.0" width="398" height="45.666666666666664"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45.609999999999999" id="yG4-58-ll2"/>
                                         </constraints>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZNX-hC-COT">
                                         <rect key="frame" x="0.0" y="61.666666666666686" width="398" height="45.666666666666657"/>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wfy-dh-8oc">
                                         <rect key="frame" x="0.0" y="123.3333333333333" width="398" height="45.333333333333329"/>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                     </textField>
@@ -2335,7 +2325,7 @@ added to this category</string>
                     <navigationItem key="navigationItem" id="K4M-Yz-0uP">
                         <nil key="title"/>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xnH-MT-wpg">
-                            <rect key="frame" x="175.33333333333334" y="9.6666666666666643" width="63.333333333333343" height="25"/>
+                            <rect key="frame" x="144" y="0.0" width="126" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" image="Group 176"/>
                         </button>
@@ -2359,12 +2349,12 @@ added to this category</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaG-dH-Bsp">
-                                <rect key="frame" x="8" y="72" width="117" height="33"/>
+                                <rect key="frame" x="8" y="52" width="117" height="33"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UF1-Tp-gGZ" customClass="UIButtonView" customModule="SHAMA" customModuleProvider="target">
-                                <rect key="frame" x="8" y="496.00000000000006" width="398" height="45.666666666666686"/>
+                                <rect key="frame" x="8" y="476" width="398" height="45.666666666666629"/>
                                 <color key="backgroundColor" red="1" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45.609999999999999" id="WHI-iW-Zas"/>
@@ -2383,33 +2373,31 @@ added to this category</string>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4sb-Zh-b9y">
-                                <rect key="frame" x="8" y="281.66666666666669" width="398" height="107"/>
+                                <rect key="frame" x="8" y="261.66666666666669" width="398" height="107"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QXv-no-qcM">
                                         <rect key="frame" x="0.0" y="0.0" width="398" height="45.333333333333336"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45.609999999999999" id="CkA-xR-NMo"/>
                                         </constraints>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ACl-ne-JyN">
                                         <rect key="frame" x="0.0" y="61.333333333333314" width="398" height="45.666666666666657"/>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_contactus" translatesAutoresizingMaskIntoConstraints="NO" id="qpd-ev-lnf">
-                                <rect key="frame" x="64" y="112.99999999999999" width="286" height="152.66666666666663"/>
+                                <rect key="frame" x="64" y="92.999999999999986" width="286" height="152.66666666666663"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="qpd-ev-lnf" secondAttribute="height" multiplier="15:8" id="vbg-2G-m16"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="A1E-kw-9sI" customClass="roundedTextView" customModule="SHAMA" customModuleProvider="target">
-                                <rect key="frame" x="8" y="428" width="398" height="60"/>
+                                <rect key="frame" x="8" y="408" width="398" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="3Q2-Vw-zhh"/>
@@ -2429,7 +2417,7 @@ added to this category</string>
                                 </userDefinedRuntimeAttributes>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZH3-Vq-VIc">
-                                <rect key="frame" x="8" y="396.66666666666669" width="68" height="23.333333333333314"/>
+                                <rect key="frame" x="8" y="376.66666666666669" width="68" height="23.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -2461,7 +2449,7 @@ added to this category</string>
                     <navigationItem key="navigationItem" id="2f1-Lz-q9g">
                         <nil key="title"/>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XJN-0p-u6l">
-                            <rect key="frame" x="175.33333333333334" y="9.6666666666666643" width="63.333333333333343" height="25"/>
+                            <rect key="frame" x="144" y="0.0" width="126" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" image="Group 176"/>
                         </button>
@@ -2485,7 +2473,7 @@ added to this category</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Orders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hm-Qi-QG6">
-                                <rect key="frame" x="8.0000000000000071" y="72" width="116.66666666666669" height="33"/>
+                                <rect key="frame" x="8.0000000000000071" y="52" width="116.66666666666669" height="33"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -2499,7 +2487,7 @@ added to this category</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ah5-SL-5do">
-                                <rect key="frame" x="8" y="113" width="398" height="574"/>
+                                <rect key="frame" x="8" y="93" width="398" height="594"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="scrollIndicatorInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
                                 <prototypes>
@@ -2573,7 +2561,7 @@ added to this category</string>
                                 </prototypes>
                             </tableView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="1ja-dU-dga">
-                                <rect key="frame" x="0.0" y="7.6666666666666856" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="-2.6666666666666856" width="414" height="736.33333333333348"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.81648877639999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="color" red="1" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
@@ -2601,7 +2589,7 @@ added to this category</string>
                     <navigationItem key="navigationItem" id="ami-fi-iu2">
                         <nil key="title"/>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Yew-f1-R08">
-                            <rect key="frame" x="175.33333333333334" y="9.6666666666666643" width="63.333333333333343" height="25"/>
+                            <rect key="frame" x="144" y="0.0" width="126" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" image="Group 176"/>
                         </button>
@@ -2636,7 +2624,7 @@ on This order</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="133" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CUL-4C-AS0">
-                                <rect key="frame" x="8" y="64" width="398" height="623"/>
+                                <rect key="frame" x="8" y="44" width="398" height="643"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="scrollIndicatorInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
                                 <prototypes>
@@ -2737,7 +2725,7 @@ on This order</string>
                     <navigationItem key="navigationItem" id="4aw-yF-P3Y">
                         <nil key="title"/>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yQH-uT-l09">
-                            <rect key="frame" x="175.33333333333334" y="9.6666666666666643" width="63.333333333333343" height="25"/>
+                            <rect key="frame" x="144" y="0.0" width="126" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" image="Group 176"/>
                         </button>
@@ -2761,10 +2749,10 @@ on This order</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OrB-o5-FaL">
-                                <rect key="frame" x="0.0" y="7.6666666666666856" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="-2.6666666666666856" width="414" height="736.33333333333348"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HXt-Tg-v7A" customClass="CosmosView" customModule="Cosmos">
-                                        <rect key="frame" x="122" y="253" width="170" height="30"/>
+                                        <rect key="frame" x="122" y="253.33333333333331" width="170" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="rating">
@@ -2778,16 +2766,15 @@ on This order</string>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="comment" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D8X-Qj-2xL">
-                                        <rect key="frame" x="16" y="347" width="382" height="50"/>
+                                        <rect key="frame" x="16" y="347.33333333333337" width="382" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="3Mn-8I-oJp"/>
                                         </constraints>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Buf-3c-mXE" customClass="UIButtonView" customModule="SHAMA" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="413" width="382" height="45.333333333333314"/>
+                                        <rect key="frame" x="16" y="413.33333333333337" width="382" height="45.333333333333314"/>
                                         <color key="backgroundColor" red="1" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45.609999999999999" id="WP3-bg-LRA"/>
@@ -2831,7 +2818,7 @@ on This order</string>
                     <navigationItem key="navigationItem" id="LnG-Wo-ZVT">
                         <nil key="title"/>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YfS-ui-jeI">
-                            <rect key="frame" x="175.33333333333334" y="9.6666666666666661" width="63.333333333333343" height="24.666666666666671"/>
+                            <rect key="frame" x="144" y="0.0" width="126" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" image="Group 176"/>
                         </button>
@@ -2854,12 +2841,12 @@ on This order</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Z9-Ub-foU">
-                                <rect key="frame" x="8.0000000000000071" y="72" width="120.66666666666669" height="33"/>
+                                <rect key="frame" x="8.0000000000000071" y="52" width="120.66666666666669" height="33"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78d-3z-rp7" customClass="UIButtonView" customModule="SHAMA" customModuleProvider="target">
-                                <rect key="frame" x="8" y="413.66666666666669" width="398" height="45.666666666666686"/>
+                                <rect key="frame" x="8" y="393.66666666666669" width="398" height="45.666666666666686"/>
                                 <color key="backgroundColor" red="1" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45.609999999999999" id="tEB-s4-BLX"/>
@@ -2878,26 +2865,23 @@ on This order</string>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="umz-ob-9w1">
-                                <rect key="frame" x="8" y="185" width="398" height="168.66666666666663"/>
+                                <rect key="frame" x="8" y="165" width="398" height="168.66666666666663"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EXY-1r-0BJ">
                                         <rect key="frame" x="0.0" y="0.0" width="398" height="45.666666666666664"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45.609999999999999" id="HOC-cw-eD5"/>
                                         </constraints>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ef2-hF-akV">
                                         <rect key="frame" x="0.0" y="61.666666666666657" width="398" height="45.666666666666657"/>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pld-AT-A3p">
                                         <rect key="frame" x="0.0" y="123.3333333333333" width="398" height="45.333333333333329"/>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                     </textField>
@@ -2921,7 +2905,7 @@ on This order</string>
                     <navigationItem key="navigationItem" id="vXy-y1-u30">
                         <nil key="title"/>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xLH-2N-RJR">
-                            <rect key="frame" x="175.33333333333334" y="9.6666666666666643" width="63.333333333333343" height="25"/>
+                            <rect key="frame" x="144" y="0.0" width="126" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" image="Group 176"/>
                         </button>

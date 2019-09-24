@@ -90,6 +90,12 @@ class bestDimond: NSObject {
             self.favorite = "0"
         }
         
+        if let caliber = dict["caliber"]?.string {
+            self.caliber = caliber
+        }else {
+            self.caliber = "0"
+        }
+        
         
         if let offer = dict["offer"]?.string {
             self.offer = offer
@@ -99,14 +105,13 @@ class bestDimond: NSObject {
         
         
         
-        guard let id = dict["id"]?.int,let name = dict["name"]?.string,let details = dict["details"]?.string,let photo = dict["photo"]?.string,let SalesPrice = dict["SalesPrice"]?.string,let OriginalPrice = dict["OriginalPrice"]?.string,let caliber = dict["caliber"]?.string else {return nil}
+        guard let id = dict["id"]?.int,let name = dict["name"]?.string,let details = dict["details"]?.string,let photo = dict["photo"]?.string,let SalesPrice = dict["SalesPrice"]?.string,let OriginalPrice = dict["OriginalPrice"]?.string else {return nil}
         self.name = name
         self.photo = photo
         self.id = id
         self.details = details
         self.SalesPrice = SalesPrice
         self.OriginalPrice = OriginalPrice
-        self.caliber = caliber
         
     }
 }

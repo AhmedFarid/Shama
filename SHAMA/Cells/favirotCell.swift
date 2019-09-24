@@ -28,14 +28,29 @@ class favirotCell: UITableViewCell {
         self.layer.borderColor = #colorLiteral(red: 0.9333333333, green: 0.9333333333, blue: 0.9333333333, alpha: 1)
         
         
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        let padding = UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0)
-        bounds = bounds.inset(by: padding)
         
     }
+    
+    override var frame: CGRect {
+      get {
+          return super.frame
+      }
+      set (newFrame) {
+          var frame =  newFrame
+          frame.origin.y += 4
+          frame.size.height -= 2 * 5
+          super.frame = frame
+      }
+    }
+    
+//    override func layoutSubviews() {
+//        super.layoutSubviews()
+//        layoutMargins = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)
+////        let padding = UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0)
+////        bounds = bounds.inset(by: padding)
+//        //contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0))
+//        
+//    }
     
     
     func configuerCell(prodect: bestDimond) {

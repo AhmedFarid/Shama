@@ -11,9 +11,9 @@ import Foundation
 
 struct URLs {
     
-    static let main = "http://emarketingbakers.com/shama/api/public/api/"
-    static let mainImage = "http://emarketingbakers.com/shama/public/uploads/topics/"
-    static let mainImageBanner = "http://emarketingbakers.com/shama/public/uploads/banners/"
+    static let main = "http://emarketingbakers.com/api/public/api/"
+    static let mainImage = "http://emarketingbakers.com/public/uploads/topics/"
+    static let mainImageBanner = "http://emarketingbakers.com/public/uploads/banners/"
     
     static let login = main + "login"
     static let register = main + "register"

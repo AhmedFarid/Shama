@@ -17,6 +17,8 @@ class loginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         spiner.isHidden = true
+        
+        
     }
 
     @IBAction func loginBTN(_ sender: Any) {
@@ -43,11 +45,11 @@ class loginVC: UIViewController {
                 if data == nil {
                     print("success")
                 }else {
-                    self.showAlert(title: "Login Filed", message: "\(data ?? "")")
+                    self.showAlert(title: "Login Filed", message: "\(message ?? "")")
                 }
                 //
             }else {
-                self.showAlert(title: "Login Filed", message: "\(data ?? "")")
+                self.showAlert(title: "Login Filed", message: "\(message ?? "")")
             }
             
             self.spiner.stopAnimating()
